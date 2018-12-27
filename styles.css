@@ -1,0 +1,231 @@
+/* Color Palette
+#C24332 - red
+#2E303F - blue
+#63948C - teal
+#EBE6D1 - off-white
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Caveat', cursive;
+*/
+
+/* Global styles
+------------------------------------*/
+
+/* border box fix */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #EF233C;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 35px;
+  margin: 5px;
+  text-decoration: underline;
+}
+
+h3, p {
+  color: #EBE6D1;
+  margin: 2px;
+}
+
+.subheads {
+  color: #EBE6D1;
+  font-size: 50px;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #63948C;
+  color: #EBE6D1;
+  padding: 6px;
+  display: inline-block;
+}
+
+/* Nav
+------------------------------------*/
+
+nav {
+  text-align: center;
+  background: #EBE6D1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #63948C;
+  text-transform: uppercase;
+  padding: 20px 10px;
+}
+
+/* Header & Footer
+    ------------------------------------*/
+
+header, footer {
+  background: #2E303F;
+  color: #EBE6D1;
+}
+
+header h1, header h2 {
+  color: #EBE6D1;
+  margin: 0;
+}
+
+header p {
+  font-size: 14px;
+}
+
+/* Header styles only */
+
+header {
+  padding-top: 50px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 200px;
+  float: left;
+/*   margin-right: 30px; */
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* Work Experience
+------------------------------------*/
+
+.work {
+  background: #C24332;
+  padding-bottom: 20px;
+}
+
+.work h3 {
+  padding-top: 10px;
+}
+
+.work p {
+  padding-top: 10px;
+}
+.dates {
+  font-size: 11px;
+  padding-bottom:10px;
+}
+#full {
+  text-align: right;
+  font-size: 13px;
+  font-style: italic;
+}
+#linkedin {
+  color: #EBE6D1;
+
+}
+
+/* Education
+  ------------------------------------*/
+
+.education {
+  background: linear-gradient(rgba(99,148,140, 0.5),
+                              rgba(99,148,140, 0.5)),
+  url(https://www.downtownkingston.ca/sites/downtownkingston.ca/files/img/feature/wild_-_market_square_web_home.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  text-align: right
+}
+
+.education p {
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/* Footer styles only */
+
+footer {
+  text-align: center;
+  position: relative;
+  padding-bottom: 50px
+}
+
+#contact a {
+  font-size: 35px;
+  text-decoration: none;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.copyright {
+  font-size: 9px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+.column-narrow {
+  width: 30%;
+  float: left;
+  min-height: 180px;
+  }
+
+.column-wide {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+  min-height: 180px;
+  }
+}
+
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 100px;
+    float: none;
+  }
+  .download {
+    display: none;
+  }
+}
